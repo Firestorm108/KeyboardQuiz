@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Which Keyboard Should You Get?</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. How much desk space do you have?</p>
+                <label><input type="radio" name="size" value="60%"> Minimal </label>
+                <label><input type="radio" name="size" value="75%"> Moderate </label>
+                <label><input type="radio" name="size" value="100%"> Plenty </label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. What type of switches do you prefer?</p>
+                <label><input type="radio" name="switch" value="linear"> Linear (Smooth and quiet) </label>
+                <label><input type="radio" name="switch" value="tactile"> Tactile (Bumpy feel) </label>
+                <label><input type="radio" name="switch" value="clicky"> Clicky (Loud and bumpy) </label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. Do you want extra keys or features?</p>
+                <label><input type="radio" name="features" value="yes"> Yes (e.g., media keys, RGB) </label>
+                <label><input type="radio" name="features" value="no"> No, keep it simple </label>
+            </div>
+
+            <button type="button" onclick="calculateResult()">See Your Recommendation</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
